@@ -34,54 +34,56 @@ type Photo = {
   tone: string
 }
 
+const photoPath = (fileName: string) => `${import.meta.env.BASE_URL}fotos/${fileName}`
+
 const photos: Photo[] = [
   {
-    src: '/fotos/foto-01.jpeg',
+    src: photoPath('foto-01.jpeg'),
     caption: 'Nosso jeito de deixar tudo mais leve',
     tone: '#ffd166',
   },
   {
-    src: '/fotos/foto-02.jpeg',
+    src: photoPath('foto-02.jpeg'),
     caption: 'Uma lembranca com cara de sorriso',
     tone: '#69e5c8',
   },
   {
-    src: '/fotos/foto-03.jpeg',
+    src: photoPath('foto-03.jpeg'),
     caption: 'Voce bonita ate quando o mundo distrai',
     tone: '#ff6b8f',
   },
   {
-    src: '/fotos/foto-04.jpeg',
+    src: photoPath('foto-04.jpeg'),
     caption: 'Meu detalhe favorito da foto',
     tone: '#75d7ff',
   },
   {
-    src: '/fotos/foto-05.jpeg',
+    src: photoPath('foto-05.jpeg'),
     caption: 'Aquele tipo de momento que eu guardo',
     tone: '#f7a9ff',
   },
   {
-    src: '/fotos/foto-06.jpeg',
+    src: photoPath('foto-06.jpeg'),
     caption: 'Ela, sendo ela, e eu completamente bobo',
     tone: '#9be36a',
   },
   {
-    src: '/fotos/foto-07.jpeg',
+    src: photoPath('foto-07.jpeg'),
     caption: 'O amor aparecendo sem pedir licenca',
     tone: '#ff9f6e',
   },
   {
-    src: '/fotos/foto-08.jpeg',
+    src: photoPath('foto-08.jpeg'),
     caption: 'Uma das minhas vistas preferidas',
     tone: '#ffd166',
   },
   {
-    src: '/fotos/foto-09.jpeg',
+    src: photoPath('foto-09.jpeg'),
     caption: 'Pequeno momento, memoria gigante',
     tone: '#6ee7d8',
   },
   {
-    src: '/fotos/foto-10.jpeg',
+    src: photoPath('foto-10.jpeg'),
     caption: 'Pra lembrar que eu escolheria voce de novo',
     tone: '#ff6b8f',
   },
